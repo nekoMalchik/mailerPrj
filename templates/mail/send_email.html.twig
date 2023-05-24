@@ -1,0 +1,15 @@
+{# templates/mail/send_email.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Send Email</h1>
+
+    {{ form_start(form) }}
+    {{ form_row(form.recipient_email) }}
+    {{ form_row(form.subject) }}
+    {{ form_row(form.message) }}
+    {{ form_row(form.sender_email) }}
+    {{ form_row(form.send) }}
+    {{ form_end(form) }}
+{% endblock %}
